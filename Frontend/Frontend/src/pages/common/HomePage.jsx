@@ -189,7 +189,7 @@ export default function HomePage() {
         <div className="card welcome-card shadow-sm mb-4">
           <div className="card-body d-flex justify-content-between align-items-center">
             <div>
-              <h4 className="mb-1">Welcome, kishan Soni👋</h4>
+              <h4 className="mb-1">Welcome, {user?.fullName}👋</h4>
               <p className="text-muted mb-0">
                 {user?.role === "User" ? "Employee" : "Admin"}
                 {user.role !== "Admin" && ` | ${department || "No Department"}`}

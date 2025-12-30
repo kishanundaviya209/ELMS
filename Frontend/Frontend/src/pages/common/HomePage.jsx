@@ -26,7 +26,6 @@
 //   )
 // }
 
-
 // ===============================================================================================================================
 
 // import { useEffect, useState } from "react";
@@ -108,7 +107,7 @@ export default function HomePage() {
   const [department, setDepartment] = useState("");
 
   // USER
-  const [usedLeaves, setUsedLeaves] = useState(0);
+  const [setUsedLeaves] = useState(0);
 
   // ADMIN
   const [pendingCount, setPendingCount] = useState(0);
@@ -145,9 +144,7 @@ export default function HomePage() {
         const from = new Date(leave.fromDate);
         const to = new Date(leave.toDate);
 
-        const days =
-          Math.ceil((to.getTime() - from.getTime()) / (1000 * 60 * 60 * 24)) +
-          1;
+        const days = Math.ceil((to.getTime() - from.getTime()) / (1000 * 60 * 60 * 24)) + 1;
 
         totalUsed += days;
       });
@@ -194,7 +191,7 @@ export default function HomePage() {
             <div>
               <h4 className="mb-1">Welcome, kishan Soni👋</h4>
               <p className="text-muted mb-0">
-                {user?.role === "User" ? "Employee": "Admin"}
+                {user?.role === "User" ? "Employee" : "Admin"}
                 {user.role !== "Admin" && ` | ${department || "No Department"}`}
               </p>
               <p className="text-muted mb-0">{user.email}</p>

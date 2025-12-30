@@ -1,0 +1,95 @@
+/* Navbar */
+.elms-navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  position: fixed;
+   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 64px;
+}
+
+
+/* Brand */
+.elms-logo {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #fff;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+.elms-title {
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Nav Links */
+.nav-saas {
+  color: #475569 !important;
+  font-weight: 500;
+  padding: 8px 6px;
+  margin: 0 6px;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+/* Hover underline */
+.nav-saas::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-saas:hover {
+  color: #4f46e5 !important;
+}
+
+.nav-saas:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Active link */
+.nav-saas.active {
+  color: #4f46e5 !important;
+  font-weight: 600;
+}
+
+.nav-saas.active::after {
+  width: 100%;
+  left: 0;
+}
+
+/* User Dropdown */
+.user-menu-btn {
+  background: #f8fafc;
+  color: #1e293b;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.user-menu-btn:hover {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+  color: #4f46e5;
+}
+
+/* Page */
+.elms-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8fafc, #f1f5f9);
+}

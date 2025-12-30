@@ -1,0 +1,20 @@
+/* Reset Password and Verify Email */
+
+/* Success Alert */
+.success-alert {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: #ecfdf5;
+  border: 1px solid #6ee7b7;
+  border-radius: 12px;
+  color: #047857;
+  margin-bottom: 1.5rem;
+}
+
+.success-alert i {
+  font-size: 1.25rem;
+}
+
+

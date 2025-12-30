@@ -1,0 +1,152 @@
+:root {
+  --primary-accent: #00d2ff;
+  --secondary-accent: #3a7bd5;
+}
+
+/* Page container – SAME AS EDIT */
+.elms-page-container {
+  margin-top: 64px; 
+  min-height: calc(100vh - 72px);
+  display: flex;
+  flex-direction: column;
+  background: #f8fafc;
+  width: 100%;
+}
+
+/* Center wrapper – SAME AS EDIT */
+.create-page-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Card – SAME SIZE AS EDIT */
+.modern-form-card {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  min-height: 500px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Sidebar */
+.form-sidebar {
+  width: 35%;
+  padding: 40px;
+  color: white;
+  background: linear-gradient(
+    to bottom right,
+    var(--secondary-accent),
+    var(--primary-accent)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-sidebar h2 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.edit-badge {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Form Content */
+.form-content {
+  width: 65%;
+  padding: 50px;
+}
+
+/* Inputs */
+.input-group-custom {
+  margin-bottom: 30px;
+}
+
+.input-group-custom label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #94a3b8;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input-group-custom input,
+.input-group-custom textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #e2e8f0;
+  padding: 10px 0;
+  font-size: 1.05rem;
+  background: transparent;
+}
+
+.input-group-custom input:focus,
+.input-group-custom textarea:focus {
+  outline: none;
+  border-bottom-color: var(--secondary-accent);
+}
+
+/* Button */
+.btn-modern-submit {
+  width: 100%;
+  background: #1e293b;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-modern-submit:hover {
+  background: #0f172a;
+  transform: translateY(-2px);
+}
+
+/* Back link */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #64748b;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--secondary-accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modern-form-card {
+    flex-direction: column;
+  }
+
+  .form-sidebar,
+  .form-content {
+    width: 100%;
+    padding: 30px;
+  }
+}

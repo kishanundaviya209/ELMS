@@ -1,0 +1,78 @@
+/* Card */
+.user-card {
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-title {
+  font-weight: 700;
+  padding: 10px;
+  background: linear-gradient(45deg, #0d6efd, #6610f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Add Button */
+.btn-user-add {
+  background: linear-gradient(45deg, #198754, #20c997);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-user-add:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Table */
+.user-table thead {
+  background: linear-gradient(45deg, #212529, #343a40);
+  color: #fff;
+}
+
+.user-table th {
+  border: none;
+  padding: 14px;
+  font-weight: 600;
+}
+
+.user-table td {
+  padding: 14px;
+  border-top: 1px solid #f1f1f1;
+}
+
+.user-table tbody tr {
+  transition: 0.3s;
+}
+
+.user-table tbody tr:hover {
+  background-color: #f8f9fa;
+  /* transform: scale(1.01); */
+}
+
+/* Buttons */
+.user-table .btn {
+  border-radius: 20px;
+  padding: 5px 14px;
+}
+
+/* Badge */
+.badge {
+  border-radius: 20px;
+  font-weight: 500;
+}

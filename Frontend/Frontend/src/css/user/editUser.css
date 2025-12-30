@@ -1,0 +1,46 @@
+
+/* Accent color reuse */
+:root {
+  --primary-accent: #00d2ff;
+  --secondary-accent: #3a7bd5;
+}
+
+/* Sidebar edit mode (same as department edit) */
+.form-sidebar.edit-mode {
+  background: linear-gradient(
+    to bottom right,
+    #6366f1,
+    #4f46e5
+  );
+}
+
+/* Disabled input look */
+.disabled-input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px dashed #cbd5f5;
+  padding: 10px 0;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+/* Modern select */
+.modern-select {
+  border: none;
+  border-bottom: 2px solid #e2e8f0;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: transparent;
+  font-size: 1.05rem;
+}
+
+.modern-select:focus {
+  box-shadow: none;
+  border-bottom-color: var(--secondary-accent);
+}
+
+/* Icon badge tweak */
+.edit-badge i {
+  font-size: 1.8rem;
+}

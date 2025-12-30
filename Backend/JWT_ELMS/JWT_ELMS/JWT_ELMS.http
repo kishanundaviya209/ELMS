@@ -1,0 +1,6 @@
+@JWT_ELMS_HostAddress = http://localhost:5136
+
+GET {{JWT_ELMS_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

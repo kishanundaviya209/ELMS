@@ -1,0 +1,42 @@
+/* Register */
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+.form-input {
+  height: 42px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+
+.submit-btn {
+  height: 44px;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Password wrapper */
+.password-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}

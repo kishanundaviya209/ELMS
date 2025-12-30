@@ -1,0 +1,28 @@
+# =========================
+# React / Frontend
+# =========================
+Frontend/Frontend/node_modules
+Frontend/Frontend/build
+Frontend/Frontend/dist
+Frontend/Frontend/.env
+
+# =========================
+# ASP.NET Core / Backend
+# =========================
+Backend/JWT_ELMS/JWT_ELMS/bin
+Backend/JWT_ELMS/JWT_ELMS/obj
+Backend/JWT_ELMS/JWT_ELMS/Properties
+Backend/JWT_ELMS/JWT_ELMS/appsettings.Development.json
+Backend/JWT_ELMS/JWT_ELMS/appsettings.json
+Backend/JWT_ELMS/JWT_ELMS.Application/bin
+Backend/JWT_ELMS/JWT_ELMS.Application/obj
+Backend/JWT_ELMS/JWT_ELMS.Data/bin
+Backend/JWT_ELMS/JWT_ELMS.Data/obj
+Backend/.vs
+
+# =========================
+# Common
+# =========================
+.vscode
+.env
+*.log

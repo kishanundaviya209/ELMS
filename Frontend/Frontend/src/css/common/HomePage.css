@@ -1,0 +1,117 @@
+/* ================= ROOT VARIABLES ================= */
+:root {
+  --primary: #4f46e5;
+  --secondary: #6366f1;
+  --soft-bg: #f8fafc;
+  --card-bg: #ffffff;
+  --text-dark: #1e293b;
+  --text-muted: #64748b;
+}
+
+/* ================= PAGE WRAPPER ================= */
+.home-page {
+  min-height: 100vh;
+  margin-top: 64px; /* navbar height */
+  background: linear-gradient(180deg, #f8fafc, #f1f5f9);
+  padding: 24px 0;
+}
+
+/* ================= WELCOME CARD ================= */
+.welcome-card {
+  margin-top: 20px;
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    rgba(79, 70, 229, 0.08),
+    rgba(99, 102, 241, 0.12)
+  );
+  border: 1px solid rgba(79, 70, 229, 0.15);
+}
+
+.welcome-card h4 {
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.welcome-card p {
+  font-size: 0.9rem;
+}
+
+/* ================= USER AVATAR ================= */
+.user-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+}
+
+/* ================= SECTION TITLE ================= */
+.section-title {
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+/* ================= DASHBOARD CARDS ================= */
+.stat-card {
+  border-radius: 18px;
+  background: var(--card-bg);
+  border: none;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
+}
+
+.stat-card h6 {
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.stat-value {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+/* Color accents */
+.stat-primary {
+  color: var(--primary);
+}
+
+.stat-warning {
+  color: #f59e0b;
+}
+
+.stat-info {
+  color: #0ea5e9;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .home-page {
+    padding: 16px;
+  }
+
+  .user-avatar {
+    width: 48px;
+    height: 48px;
+    font-size: 1.1rem;
+  }
+
+  .stat-value {
+    font-size: 1.8rem;
+  }
+}

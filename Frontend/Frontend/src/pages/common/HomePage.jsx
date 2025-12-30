@@ -52,7 +52,7 @@
 //           <div className="card-body d-flex align-items-center">
 //             <div
 //               className="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center me-4"
-//               style={{ width: 80, height: 80, fontSize: 30 }}
+//               style={{ inline-size: 80, block-size: 80, fontSize: 30 }}
 //             >
 //               {user?.fullName?.charAt(0) || "G"}
 //             </div>
